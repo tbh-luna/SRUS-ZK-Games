@@ -4,23 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/.keep" afterDir="false" />
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="Made Project">
+      <change afterPath="$PROJECT_DIR$/app/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tbh-luna"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tbh-luna/SRUS-ZK-Games.git",
+    "accountId": "ce15cc8b-14a4-4a13-ba2c-62237824e2c2"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -52,6 +65,19 @@
       <option name="presentableId" value="Default" />
       <updated>1755409867510</updated>
     </task>
+    <task id="LOCAL-00001" summary="Made Project">
+      <option name="closed" value="true" />
+      <created>1755432837208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755432837208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Project" />
   </component>
 </project>
