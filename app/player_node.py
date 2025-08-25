@@ -8,9 +8,6 @@ class PlayerNode:
     def player_get(self):
         return self.__player
 
-    def player_set(self, value):
-        self.__player = value
-
     @property
     def next_get(self):
         return self.__nextNode

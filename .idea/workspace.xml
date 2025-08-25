@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="idk man">
-      <change afterPath="$PROJECT_DIR$/app/player_node.py" afterDir="false" />
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="added player node and changed player py because im awesome">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_node.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
     "Python tests.Python tests in player_test.py.executor": "Run",
     "Python tests.Python tests in test_player.py.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.player_list.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -161,13 +162,22 @@
       <option name="project" value="LOCAL" />
       <updated>1756053118837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added player node and changed player py because im awesome">
+      <option name="closed" value="true" />
+      <created>1756111606937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756111606937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made Project" />
     <MESSAGE value="player.py made" />
     <MESSAGE value="idk man" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk man" />
+    <MESSAGE value="added player node and changed player py because im awesome" />
+    <option name="LAST_COMMIT_MESSAGE" value="added player node and changed player py because im awesome" />
   </component>
 </project>
