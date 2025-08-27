@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="adding to tail is now something that can be done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="popping at head and tail now possible.">
       <change beforePath="$PROJECT_DIR$/app/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756313814528</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="popping at head and tail now possible.">
+      <option name="closed" value="true" />
+      <created>1756314117957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756314117957</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,6 +203,7 @@
     <MESSAGE value="added player node and changed player py because im awesome" />
     <MESSAGE value="Added functionality to player_list.py, adding things to head, checking for tail while adding to head. no adding to tail." />
     <MESSAGE value="adding to tail is now something that can be done" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding to tail is now something that can be done" />
+    <MESSAGE value="popping at head and tail now possible." />
+    <option name="LAST_COMMIT_MESSAGE" value="popping at head and tail now possible." />
   </component>
 </project>
