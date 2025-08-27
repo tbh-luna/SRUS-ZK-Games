@@ -17,17 +17,37 @@ class PlayerList:
         else:
             return True
 
-    def insert_at_head(self, data):
+    def insert_at_head(self, player):
 
-        newNode = PlayerNode(data)
+        # makes new node from player.
+        newNode = PlayerNode(player)
 
+        # if head isn't empty
         if self.head_is_not_empty():
             newNode.next_set = self.__listHead
-            if not self.tail_is_not_empty():
-                self.__listTail = self.__listHead
-                self.__listHead.next_set = None
 
-        self.__listHead = newNode
-
+        # new node previous is none, for it is the head.
         newNode.previous_set = None
         self.__listHead = newNode
+
+    def insert_at_tail(self, player):
+        newNode = PlayerNode(player)
+
+        if self.tail_is_not_empty():
+            newNode.previous_set = self.__listTail
+
+        # new node next is none for it is the tail..
+        newNode.next_set = None
+        self.__listTail = newNode
+
+
+
+
+
+
+
+
+
+
+
+
