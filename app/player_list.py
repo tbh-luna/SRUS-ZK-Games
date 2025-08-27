@@ -52,8 +52,15 @@ class PlayerList:
         else:
             self.__listTail = self.__listTail.previous_get
 
-
-
+    def pop_using_id(self, xid):
+        while True:
+            if self.head_is_not_empty():
+                if self.__listHead.key == xid:
+                    self.__listHead = self.__listHead.next_get
+                    self.__listHead.previous_set = None
+                    break
+            if self.tail_is_not_empty():
+                break
 
 
 
