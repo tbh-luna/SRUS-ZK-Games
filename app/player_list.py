@@ -40,6 +40,17 @@ class PlayerList:
         newNode.next_set = None
         self.__listTail = newNode
 
+    def pop_at_head(self):
+        if not self.head_is_not_empty():
+            return
+        else:
+            self.__listHead = self.__listHead.next_get
+
+    def pop_at_tail(self):
+        if not self.tail_is_not_empty():
+            return
+        else:
+            self.__listTail = self.__listTail.previous_get
 
 
 
