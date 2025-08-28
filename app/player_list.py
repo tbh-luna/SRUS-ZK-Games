@@ -26,6 +26,11 @@ class PlayerList:
         if self.head_is_not_empty():
             newNode.next_set = self.__listHead
 
+            if not self.tail_is_not_empty():
+                self.__listTail = self.__listHead
+                self.__listTail.next_set = None
+                self.__listTail.previous_set = newNode
+
         # new node previous is none, for it is the head.
         newNode.previous_set = None
         self.__listHead = newNode
@@ -36,31 +41,58 @@ class PlayerList:
         if self.tail_is_not_empty():
             newNode.previous_set = self.__listTail
 
-        # new node next is none for it is the tail..
+            if not self.head_is_not_empty():
+                self.__listHead = self.__listTail
+                self.__listHead.previous_set = None
+                self.__listHead.next_set = newNode
+
+        # new node next is none for it is the tail.
         newNode.next_set = None
         self.__listTail = newNode
 
     def pop_at_head(self):
         if not self.head_is_not_empty():
             return
+
         else:
             self.__listHead = self.__listHead.next_get
 
     def pop_at_tail(self):
         if not self.tail_is_not_empty():
             return
+
         else:
             self.__listTail = self.__listTail.previous_get
 
     def pop_using_id(self, xid):
-        while True:
-            if self.head_is_not_empty():
-                if self.__listHead.key == xid:
-                    self.__listHead = self.__listHead.next_get
-                    self.__listHead.previous_set = None
-                    break
-            if self.tail_is_not_empty():
-                break
+
+        if self.head_is_not_empty():
+            if self.__listHead.key == xid:
+                self.__listHead = self.__listHead.next_get
+                self.__listHead.previous_set = None
+                return
+
+            else:
+                workingNode = self.__listHead.next_get
+
+                while True:
+                    if workingNode is None:
+                        print("No Node with ID found.")
+                        return
+
+                    if workingNode.key == xid:
+                        nextNode = workingNode.next_get
+                        previousNode = workingNode.previous_get
+                        previousNode.next_set = nextNode
+                        nextNode.previous_set = previousNode
+                        del workingNode
+                        return
+
+                    else:
+                        workingNode = workingNode.next_get
+
+        if self.tail_is_not_empty():
+            return
 
 
 
