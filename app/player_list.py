@@ -1,4 +1,4 @@
-from app.player_node import PlayerNode
+from player_node import PlayerNode
 
 class PlayerList:
     def __init__(self):
@@ -21,55 +21,80 @@ class PlayerList:
 
         # makes new node from player.
         newNode = PlayerNode(player)
+        oldHead = self.__listHead
 
-        # if head isn't empty
-        if self.head_is_not_empty():
-            newNode.next_set = self.__listHead
+        # if head is empty
+        if not self.head_is_not_empty():
+            self.__listHead = newNode
+            self.__listHead.previous_set(None)
+
+        else:
+            self.__listHead = newNode
+            self.__listHead.next_set(oldHead)
+            oldHead.previous_set(newNode)
 
             if not self.tail_is_not_empty():
-                self.__listTail = self.__listHead
-                self.__listTail.next_set = None
-                self.__listTail.previous_set = newNode
+                self.__listTail = oldHead
+                self.__listTail.next_set(None)
+                self.__listTail.previous_set(newNode)
 
-        # new node previous is none, for it is the head.
-        newNode.previous_set = None
-        self.__listHead = newNode
+        self.__listHead.previous_set(None)
+        return
 
     def insert_at_tail(self, player):
-        newNode = PlayerNode(player)
 
-        if self.tail_is_not_empty():
-            newNode.previous_set = self.__listTail
+        newNode = PlayerNode(player)
+        oldTail = self.__listTail
+
+        # if tail empty
+        if not self.tail_is_not_empty():
+            self.__listTail = newNode
+            newNode.next_set(None)
+            return
+
+        else:
+
+            self.__listTail = newNode
+            newNode.previous_set(oldTail)
+            oldTail.next_set(newNode)
 
             if not self.head_is_not_empty():
-                self.__listHead = self.__listTail
-                self.__listHead.previous_set = None
-                self.__listHead.next_set = newNode
+                self.__listHead = oldTail
+                self.__listHead.previous_set(None)
+                self.__listHead.next_set(newNode)
 
-        # new node next is none for it is the tail.
-        newNode.next_set = None
-        self.__listTail = newNode
+            # new node next is none for it is the tail.
+            newNode.next_set(None)
 
     def pop_at_head(self):
         if not self.head_is_not_empty():
             return
 
         else:
-            self.__listHead = self.__listHead.next_get
+            workingNode = self.__listHead
+            comingNode = workingNode.next_get
+            comingNode.previous_set(None)
+            self.__listHead = comingNode
+            del workingNode
 
     def pop_at_tail(self):
+
         if not self.tail_is_not_empty():
             return
 
         else:
-            self.__listTail = self.__listTail.previous_get
+            workingNode = self.__listTail
+            comingNode = workingNode.previous_get
+            comingNode.next_set(None)
+            self.__listTail = comingNode
+            del workingNode
 
     def pop_using_id(self, xid):
 
         if self.head_is_not_empty():
             if self.__listHead.key == xid:
                 self.__listHead = self.__listHead.next_get
-                self.__listHead.previous_set = None
+                self.__listHead.previous_set(None)
                 return
 
             else:
@@ -83,8 +108,8 @@ class PlayerList:
                     if workingNode.key == xid:
                         nextNode = workingNode.next_get
                         previousNode = workingNode.previous_get
-                        previousNode.next_set = nextNode
-                        nextNode.previous_set = previousNode
+                        previousNode.next_set(nextNode)
+                        nextNode.previous_set(previousNode)
                         del workingNode
                         return
 
@@ -93,6 +118,36 @@ class PlayerList:
 
         if self.tail_is_not_empty():
             return
+
+    def iterate_over_list(self, boolean):
+
+        if boolean:
+            if self.head_is_not_empty():
+                workingNode = self.__listHead
+            else:
+                workingNode = None
+            while True:
+                print(workingNode.key)
+                workingNode = workingNode.next_get
+                if workingNode is None:
+                    break
+
+        else:
+            if self.tail_is_not_empty():
+                workingNode = self.__listTail
+            else:
+                print("Tail is empty")
+                return
+
+            while True:
+
+                print(workingNode.key)
+                workingNode = workingNode.previous_get
+
+                if workingNode is None:
+                    return
+
+
 
 
 
