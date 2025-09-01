@@ -78,6 +78,12 @@ class PlayerList:
         if not self.head_is_not_empty():
             return
 
+        # at first i just set head to next node
+        # but then i realised that working backwards still had a reference to it lol
+        # so this instead
+
+        # also im using multiple single line comments because i dont like how the triple quotes look
+        # i wish python had /* sometimes.
         else:
             workingNode = self.__listHead
             comingNode = workingNode.next_get
@@ -108,6 +114,11 @@ class PlayerList:
             else:
                 workingNode = self.__listHead.next_get
 
+                # i enjoy while true loops
+                # i used to not use them but using them has made my life like 10x easier. as is with programming.
+                # you can end up with an infinite loop ofc. and that would be bad.
+                # but i like to think i cover my bases
+                # i wonder if eventually there will be a "while true considered harmful"
                 while True:
                     if workingNode is None:
                         print("No Node with ID found.")
@@ -127,9 +138,9 @@ class PlayerList:
         if self.tail_is_not_empty():
             return
 
-    def iterate_over_list(self, boolean):
+    def display(self, fromhead):
 
-        if boolean:
+        if fromhead:
             if self.head_is_not_empty():
                 workingNode = self.__listHead
             else:
