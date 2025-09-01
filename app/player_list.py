@@ -85,6 +85,12 @@ class PlayerList:
         # also im using multiple single line comments because i dont like how the triple quotes look
         # i wish python had /* sometimes.
         else:
+            if self.__listHead.next_get is None:
+                workingNode = self.__listHead
+                self.__listHead = None
+                del workingNode
+                return
+
             workingNode = self.__listHead
             comingNode = workingNode.next_get
             comingNode.previous_set(None)
@@ -97,6 +103,12 @@ class PlayerList:
             return
 
         else:
+            if self.__listTail.previous_get is None:
+                workingNode = self.__listTail
+                self.__listTail = None
+                del workingNode
+                return
+
             workingNode = self.__listTail
             comingNode = workingNode.previous_get
             comingNode.next_set(None)
