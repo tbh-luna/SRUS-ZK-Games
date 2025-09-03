@@ -27,5 +27,4 @@ class PlayerNode:
         return self.__player.uid
 
     def __str__(self):
-        return ("PlayerNode " + self.player_get.__str__() + self.next_get.__str__()
-                + self.previous_get.__str__())
+        return f'PlayerNode: {self.__player} Next Node: {self.__nextNode}  Previous Node: {self.__previousNode}'

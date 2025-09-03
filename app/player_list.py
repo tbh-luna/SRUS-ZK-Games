@@ -27,11 +27,11 @@ class PlayerList:
 
     def insert_at_head(self, player):
 
-        # makes new node from player.
+        # Makes new node from player.
         newNode = PlayerNode(player)
         oldHead = self.__listHead
 
-        # if head is empty
+        # If head is empty
         if not self.head_is_not_empty():
             self.__listHead = newNode
             self.__listHead.previous_set(None)
@@ -54,7 +54,7 @@ class PlayerList:
         newNode = PlayerNode(player)
         oldTail = self.__listTail
 
-        # if tail empty
+        # If tail empty
         if not self.tail_is_not_empty():
             self.__listTail = newNode
             newNode.next_set(None)
@@ -71,19 +71,19 @@ class PlayerList:
                 self.__listHead.previous_set(None)
                 self.__listHead.next_set(newNode)
 
-            # new node next is none for it is the tail.
+            # New node next is none for it is the tail.
             newNode.next_set(None)
 
     def pop_at_head(self):
         if not self.head_is_not_empty():
             return
 
-        # at first i just set head to next node
-        # but then i realised that working backwards still had a reference to it lol
-        # so this instead
+        # At first i just set head to next node
+        # But then i realised that working backwards still had a reference to it
+        # So this instead
 
-        # also im using multiple single line comments because i dont like how the triple quotes look
-        # i wish python had /* sometimes.
+        # Also im using multiple single line comments because I don't like how the triple quotes look
+        # I wish python had /* sometimes.
         else:
             if self.__listHead.next_get is None:
                 workingNode = self.__listHead
@@ -126,58 +126,73 @@ class PlayerList:
             else:
                 workingNode = self.__listHead.next_get
 
-                # i enjoy while true loops
-                # i used to not use them but using them has made my life like 10x easier. as is with programming.
-                # you can end up with an infinite loop ofc. and that would be bad.
-                # but i like to think i cover my bases
-                # i wonder if eventually there will be a "while true considered harmful"
+                # Iterates through each node and tries to pop it by matching its ID
+
                 while True:
                     if workingNode is None:
                         print("No Node with ID found.")
                         return
 
                     if workingNode.key == xid:
+
+
                         nextNode = workingNode.next_get
                         previousNode = workingNode.previous_get
-                        previousNode.next_set(nextNode)
-                        nextNode.previous_set(previousNode)
+
+                        if previousNode is not None:
+                            previousNode.next_set(nextNode)
+                        if nextNode is not None:
+                            nextNode.previous_set(previousNode)
+
+                        if workingNode == self.__listTail:
+                            self.__listTail = previousNode
+
                         del workingNode
                         return
 
                     else:
-                        workingNode = workingNode.next_get
+                        if workingNode.next_get is None:
+                            break
 
-        if self.tail_is_not_empty():
-            return
+                        workingNode = workingNode.next_get
 
     def display(self, fromhead):
 
         if fromhead:
             if self.head_is_not_empty():
                 workingNode = self.__listHead
+
             else:
                 workingNode = None
-            while True:
-                print(workingNode.key)
+
+            while workingNode is not None:
+                # So here I initially tried to just print out the str representation of the classes?
+                # but it ended up causing a recursion error (maximum recursion depth exceeded)
+                # I tried reformatting, looking up how to do __str__ functions,
+                # but no matter what I've done it hasn't worked. I don't know what I'm doing wrong
+                # I tried removing references to other classes, leaving only variables
+                # I don't know and at this point this is overdue as is.
+                print(f'Player ID : {workingNode.key}, Player Name : {workingNode.player_get.name}')
                 workingNode = workingNode.next_get
-                if workingNode is None:
-                    break
 
         else:
             if self.tail_is_not_empty():
                 workingNode = self.__listTail
+
             else:
                 print("Tail is empty")
                 return
 
-            while True:
+            while workingNode is not None:
 
-                print(workingNode.key)
+                print(f'Player ID : {workingNode.key}, Player Name : {workingNode.player_get.name}')
                 workingNode = workingNode.previous_get
 
                 if workingNode is None:
                     return
 
+    def __str__(self):
+        return f'Head: {self.__listHead} Tail: {self.__listTail}'
 
 
 
