@@ -166,13 +166,8 @@ class PlayerList:
                 workingNode = None
 
             while workingNode is not None:
-                # So here I initially tried to just print out the str representation of the classes?
-                # but it ended up causing a recursion error (maximum recursion depth exceeded)
-                # I tried reformatting, looking up how to do __str__ functions,
-                # but no matter what I've done it hasn't worked. I don't know what I'm doing wrong
-                # I tried removing references to other classes, leaving only variables
-                # I don't know and at this point this is overdue as is.
-                print(f'Player ID : {workingNode.key}, Player Name : {workingNode.player_get.name}')
+
+                print(workingNode)
                 workingNode = workingNode.next_get
 
         else:
@@ -185,7 +180,7 @@ class PlayerList:
 
             while workingNode is not None:
 
-                print(f'Player ID : {workingNode.key}, Player Name : {workingNode.player_get.name}')
+                print(workingNode)
                 workingNode = workingNode.previous_get
 
                 if workingNode is None:

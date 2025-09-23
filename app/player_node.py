@@ -27,4 +27,4 @@ class PlayerNode:
         return self.__player.uid
 
     def __str__(self):
-        return f'PlayerNode: {self.__player}'
+        return f'Player Node: ({self.__player})'

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/player_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_node.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +32,12 @@
     &quot;assignee&quot;: &quot;tbh-luna&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/tbh-luna/SRUS-ZK-Games.git&quot;,
-    &quot;accountId&quot;: &quot;a2882559-2ab6-4059-9bfd-daf21e5448cb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tbh-luna/SRUS-ZK-Games.git",
+    "accountId": "ce15cc8b-14a4-4a13-ba2c-62237824e2c2"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -80,7 +81,7 @@
       <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_player.TestPlayer.test_pop_by_id">
+  <component name="RunManager" selected="Python tests.Python tests in test_player.py">
     <configuration name="Python tests for test_player.TestPlayer" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -163,10 +164,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_by_id" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_tail" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_head" />
         <item itemvalue="Python tests.Python tests in test_player.py" />
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_tail" />
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_by_id" />
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_head" />
         <item itemvalue="Python tests.Python tests for test_player.TestPlayer" />
       </list>
     </recent_temporary>
@@ -174,8 +175,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
       </set>
     </attachedChunks>
   </component>
