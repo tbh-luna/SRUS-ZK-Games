@@ -1,4 +1,5 @@
 import unittest
+import argon2
 from app.player import Player
 from app.player_list import PlayerList
 
@@ -53,7 +54,16 @@ class TestPlayer(unittest.TestCase):
         self.assertEqual(self.player_list.get_tail.key, self.player2.uid)
         self.player_list.display(True)
 
+    def test_password_check_correct(self):
+        self.player.add_password("MicCheck1")
+        self.player.check_password("MicCheck1")
 
+    # Assert raises validates the test if there is a specific exception thrown.
+    # (argon2.exceptions.VerifyMismatchError in this case, which is why we have to import it)
+    def test_password_check_incorrect(self):
+        self.player.add_password("MicCheck1")
+        with self.assertRaises(argon2.exceptions.VerifyMismatchError):
+            self.player.check_password("MicCheck2")
 
 if __name__ == '__main__':
     unittest.main()
