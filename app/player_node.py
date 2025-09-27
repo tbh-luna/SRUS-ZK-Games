@@ -12,7 +12,6 @@ class PlayerNode:
     def next(self):
         return self.__nextNode
 
-
     @next.setter
     def next(self, value):
         self.__nextNode = value

@@ -1,7 +1,7 @@
 from argon2 import PasswordHasher
 
 class Player:
-    def __init__(self, __ID : int, __playerName : int):
+    def __init__(self, __ID : int, __playerName : str):
         self.__ID = __ID
         self.__playerName = __playerName
         self.__hash = None
@@ -12,11 +12,11 @@ class Player:
         return self.__ID
 
     @property
-    def name(self):
+    def name(self) -> str:
         return self.__playerName
 
     @property
-    def score(self):
+    def score(self) -> int:
         return self.__score
 
     @score.setter
