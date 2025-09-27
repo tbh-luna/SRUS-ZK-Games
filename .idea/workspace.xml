@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="Did setters and getters properly using decorators. Some type hinting added too.">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="added some more type hinting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player.py" afterDir="false" />
     </list>
@@ -80,7 +80,7 @@
       <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests in test_player.py">
     <configuration name="Python tests for test_player.TestPlayer.test_password_check" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -307,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758968690780</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added some more type hinting">
+      <option name="closed" value="true" />
+      <created>1758968951109</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1758968951109</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +357,8 @@
     <MESSAGE value="yuppers" />
     <MESSAGE value="did password hashing and unit tests :3" />
     <MESSAGE value="Did setters and getters properly using decorators. Some type hinting added too." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did setters and getters properly using decorators. Some type hinting added too." />
+    <MESSAGE value="added some more type hinting" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some more type hinting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

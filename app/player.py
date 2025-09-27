@@ -8,7 +8,7 @@ class Player:
         self.__score = 0
 
     @property
-    def uid(self):
+    def uid(self) -> int:
         return self.__ID
 
     @property
