@@ -9,17 +9,20 @@ class PlayerNode:
         return self.__player
 
     @property
-    def next_get(self):
+    def next(self):
         return self.__nextNode
 
-    def next_set(self, value):
+
+    @next.setter
+    def next(self, value):
         self.__nextNode = value
 
     @property
-    def previous_get(self):
+    def previous(self):
         return self.__previousNode
 
-    def previous_set(self, value):
+    @previous.setter
+    def previous(self, value):
         self.__previousNode = value
 
     @property
