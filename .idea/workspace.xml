@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="added some more type hinting">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="type hint">
+      <change afterPath="$PROJECT_DIR$/app/player_bnode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/player_bst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +57,9 @@
     &quot;Python tests.Python tests for test.player_test.TestPlayer.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test.player_test.TestPlayer.test_properties.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_player.TestPlayer.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_player.TestPlayer.test_double_up_sort.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_player.TestPlayer.test_ids.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_player.TestPlayer.test_ordered_list_sort.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_player.TestPlayer.test_password_check.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_player.TestPlayer.test_password_check_incorrect.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_player.TestPlayer.test_pop_by_id.executor&quot;: &quot;Run&quot;,
@@ -81,6 +91,36 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests in test_player.py">
+    <configuration name="Python tests for test_player.TestPlayer.test_double_up_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SRUS-ZK-Games" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_player.TestPlayer.test_double_up_sort&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_player.TestPlayer.test_ordered_list_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SRUS-ZK-Games" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_player.TestPlayer.test_ordered_list_sort&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_player.TestPlayer.test_password_check" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -111,38 +151,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_player.TestPlayer.test_pop_by_id" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="SRUS-ZK-Games" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_pop_by_id&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_player.TestPlayer.test_pop_tail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="SRUS-ZK-Games" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_pop_tail&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_player.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -162,10 +170,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_player.py" />
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_double_up_sort" />
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_ordered_list_sort" />
         <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_password_check_incorrect" />
         <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_password_check" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_tail" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_pop_by_id" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758968951109</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="type hint">
+      <option name="closed" value="true" />
+      <created>1758968994518</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1758968994518</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,18 +374,8 @@
     <MESSAGE value="did password hashing and unit tests :3" />
     <MESSAGE value="Did setters and getters properly using decorators. Some type hinting added too." />
     <MESSAGE value="added some more type hinting" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some more type hinting" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_player.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="type hint" />
+    <option name="LAST_COMMIT_MESSAGE" value="type hint" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />

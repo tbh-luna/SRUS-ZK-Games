@@ -30,3 +30,20 @@ my_list.display(True)
 print("and again")
 my_list.pop_at_head()
 my_list.display(True)
+
+zoe.score = 1
+luna.score = 2
+alice.score = 3
+prunsel.score = 4
+wayne.score = 5
+
+standardList = [zoe, luna, alice, prunsel, wayne]
+
+print(standardList[0].__str__())
+print(standardList[4].__str__())
+
+Player.bubble_sort(standardList)
+
+print(standardList[0].__str__())
+print(standardList[4].__str__())
+
