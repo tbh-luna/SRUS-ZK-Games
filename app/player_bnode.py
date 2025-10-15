@@ -1,11 +1,15 @@
-from player import Player
 from __future__ import annotations
+from player import Player
 
 class PlayerBNode:
     def __init__(self, player : Player):
         self.__internalPlayer = player
         self.__leftNode = None
         self.__rightNode = None
+
+    @property
+    def internalPlayer(self):
+        return self.__internalPlayer
 
     @property
     def leftNode(self):
@@ -22,3 +26,21 @@ class PlayerBNode:
     @rightNode.setter
     def rightNode(self, node : PlayerBNode):
         self.__rightNode = node
+
+    def __eq__(self, other):
+        return len(self.internalPlayer.name) == len(other.name)
+
+    def __lt__(self, other):
+        return len(self.internalPlayer.name) < len(other.name)
+
+    def __gt__(self, other):
+        return len(self.internalPlayer.name) > len(other.name)
+
+    def __ge__(self, other):
+        return len(self.internalPlayer.name) >= len(other.name)
+
+    def __le__(self, other):
+        return len(self.internalPlayer.name) <= len(other.name)
+
+    def __ne__(self, other):
+        return len(self.internalPlayer.name) != len(other.name)
