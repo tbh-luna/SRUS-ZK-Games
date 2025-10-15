@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="playerBNode">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="insertion started. added comparison functions to nodes so i dont have to make unnecesary variables.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/player_bnode.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_bnode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/player_bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_bst.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -332,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759934171474</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="insertion started. added comparison functions to nodes so i dont have to make unnecesary variables.">
+      <option name="closed" value="true" />
+      <created>1760526668540</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760526668540</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +384,8 @@
     <MESSAGE value="added some more type hinting" />
     <MESSAGE value="type hint" />
     <MESSAGE value="playerBNode" />
-    <option name="LAST_COMMIT_MESSAGE" value="playerBNode" />
+    <MESSAGE value="insertion started. added comparison functions to nodes so i dont have to make unnecesary variables." />
+    <option name="LAST_COMMIT_MESSAGE" value="insertion started. added comparison functions to nodes so i dont have to make unnecesary variables." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />

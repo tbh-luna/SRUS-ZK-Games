@@ -13,8 +13,21 @@ class PlayerBST:
 
     def insert(self, player : Player, workingNode : PlayerBNode) -> None:
 
-        if workingNode is None:
-            workingNode = PlayerBNode(player)
+        if self.__treeRoot is None:
+            self.__treeRoot = PlayerBNode(player)
+            return
 
+        if workingNode.internalPlayer < player:
+            workingNode = workingNode.leftNode
+            self.insert(player, workingNode)
+            return
 
+        elif workingNode.internalPlayer > player:
+            workingNode = workingNode.rightNode
+            self.insert(player, workingNode)
+            return
+
+        elif workingNode.internalPlayer == player:
+            print("No duplicate keys")
+            return
 
