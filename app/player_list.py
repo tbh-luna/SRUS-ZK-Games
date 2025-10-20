@@ -4,6 +4,7 @@ class PlayerList:
     def __init__(self):
         self.__listHead = None
         self.__listTail = None
+        self.fromhead = True
 
     @property
     def head(self):
@@ -75,15 +76,10 @@ class PlayerList:
             newNode.next = None
 
     def pop_at_head(self):
+
         if not self.head_is_not_empty():
             return
 
-        # At first i just set head to next node
-        # But then i realised that working backwards still had a reference to it
-        # So this instead
-
-        # Also im using multiple single line comments because I don't like how the triple quotes look
-        # I wish python had /* sometimes.
         else:
             if self.__listHead.next is None:
                 workingNode = self.__listHead
@@ -115,7 +111,7 @@ class PlayerList:
             self.__listTail = comingNode
             del workingNode
 
-    def pop_using_id(self, xid):
+    def pop_using_id(self, xid : str):
 
         if self.head_is_not_empty():
             if self.__listHead.key == xid:
@@ -155,6 +151,8 @@ class PlayerList:
                             break
 
                         workingNode = workingNode.next
+        else:
+            print("List is empty.")
 
     def display(self, fromhead):
 
