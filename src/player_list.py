@@ -1,4 +1,4 @@
-from player_node import PlayerNode
+from src.player_node import PlayerNode
 
 
 class PlayerList:
