@@ -3,17 +3,17 @@ import argon2
 from src.player import Player
 from src.player_list import PlayerList
 
+
 class TestPlayer(unittest.TestCase):
 
-    # These should cover most functionalities of the lists and they run fine.
-    # I'm sure there are edge cases or things I've forgotten about. Please feel free to email me about them.
+    # These should hopefully cover most functionalities of the lists.
 
     def setUp(self):
-        self.player = Player(1, "Zoe")
-        self.player2 = Player(2, "Luna")
-        self.player3 = Player(3, "Mars")
-        self.player4 = Player(4, "Wayne")
-        self.player5 = Player(5, "Prunsel")
+        self.player = Player("1", "Zoe")
+        self.player2 = Player("2", "Luna")
+        self.player3 = Player("3", "Mars")
+        self.player4 = Player("4", "Wayne")
+        self.player5 = Player("5", "Prunsel")
         self.player_list = PlayerList()
         self.player.score = 1
         self.player2.score = 2
@@ -21,16 +21,15 @@ class TestPlayer(unittest.TestCase):
         self.player4.score = 4
         self.player5.score = 4
 
-
         self.orderedList = [self.player4, self.player3, self.player2, self.player]
         self.disOrderedList = [self.player2, self.player4, self.player, self.player3]
 
-        self.orderedDoubleUpList = [self.player5, self.player4, self.player3, self.player2]
+        self.orderedDoubleUpList = [self.player5, self.player4,
+                                    self.player3, self.player2]
         self.doubleUpList = [self.player2, self.player3, self.player5, self.player4]
 
-
     def test_ids(self):
-        self.assertEqual(self.player.uid, 1)
+        self.assertEqual(self.player.uid, "1")
         self.assertEqual(self.player.name, "Zoe")
 
     def test_pop_head(self):
@@ -64,7 +63,7 @@ class TestPlayer(unittest.TestCase):
         self.player_list.insert_at_head(self.player2)
         self.player_list.insert_at_head(self.player3)
         self.assertEqual(self.player_list.head.key, self.player3.uid)
-        self.player_list.pop_using_id(1)
+        self.player_list.pop_using_id("1")
         self.assertEqual(self.player_list.head.key, self.player3.uid)
         self.assertEqual(self.player_list.tail.key, self.player2.uid)
         self.player_list.display(True)
@@ -74,7 +73,7 @@ class TestPlayer(unittest.TestCase):
         self.player.check_password("MicCheck1")
 
     # Assert raises validates the test if there is a specific exception thrown.
-    # (argon2.exceptions.VerifyMismatchError in this case, which is why we have to import it)
+    # (argon2.exceptions.VerifyMismatchError in this case)
     def test_password_check_incorrect(self):
         self.player.add_password("MicCheck1")
         with self.assertRaises(argon2.exceptions.VerifyMismatchError):

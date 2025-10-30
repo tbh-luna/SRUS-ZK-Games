@@ -1,6 +1,7 @@
 from __future__ import annotations
 from player import Player
 
+
 class PlayerBNode:
     def __init__(self, player : Player):
         self.__internalPlayer = player

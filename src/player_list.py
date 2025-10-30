@@ -1,5 +1,6 @@
 from player_node import PlayerNode
 
+
 class PlayerList:
     def __init__(self):
         self.__listHead = None
@@ -64,7 +65,7 @@ class PlayerList:
         else:
 
             self.__listTail = newNode
-            newNode.previous= oldTail
+            newNode.previous = oldTail
             oldTail.next = newNode
 
             if not self.head_is_not_empty():
@@ -131,7 +132,6 @@ class PlayerList:
 
                     if workingNode.key == xid:
 
-
                         nextNode = workingNode.next
                         previousNode = workingNode.previous
 
@@ -186,10 +186,3 @@ class PlayerList:
 
     def __str__(self):
         return f'Head: {self.__listHead} Tail: {self.__listTail}'
-
-
-
-
-
-
-

@@ -3,8 +3,6 @@ from argon2 import PasswordHasher
 
 
 class Player:
-
-
     def __init__(self, __ID : str, __playerName : str):
         self.__ID = __ID
         self.__playerName = __playerName

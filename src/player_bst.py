@@ -2,8 +2,8 @@ from __future__ import annotations
 from player import Player
 from player_bnode import PlayerBNode
 
-class PlayerBST:
 
+class PlayerBST:
     def __init__(self):
         self.__treeRoot = None
 
@@ -30,4 +30,3 @@ class PlayerBST:
         elif workingNode.internalPlayer == player:
             print("No duplicate keys")
             return
-
