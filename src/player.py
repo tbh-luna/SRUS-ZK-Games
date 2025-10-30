@@ -55,7 +55,7 @@ class Player:
     def __ne__(self, other):
         return int(self.score) != int(other.score)
 
- # I chose bubble sort because it is easy to implement
+    # I chose bubble sort because it is easy to implement
 
     @staticmethod
     def bubble_sort(playerList : list[Player]):
