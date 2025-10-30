@@ -1,5 +1,4 @@
-from __future__ import annotations # This is so I can typehint toward a 'player' object because for some reason its not
-                                   # just outright supported.
+from __future__ import annotations  # Here so I can typehint toward a 'player' object
 from argon2 import PasswordHasher
 
 class Player:
@@ -54,16 +53,16 @@ class Player:
         return int(self.score) != int(other.score)
 
 
-    # I chose bubble sort because it's simple and easy to implement.
-    # I see this more as a local leaderboard thing, so there wouldn't be that many players. For that purpose,
-    # bubble sort performs well enough.
+  # I chose bubble sort because it's simple and easy to implement.
+  # I see this more as a local leaderboard thing. For that reason
+  # bubble sort performs well enough.
 
     @staticmethod
+
     def bubble_sort(playerList : list[Player]):
         for i in playerList:
             for x in range(0, len(playerList) - 1):
                 if playerList[x] < playerList[x + 1]:
                     temp = playerList[x]
                     playerList[x] = playerList[x + 1]
-                    playerList[x+1] = temp
-
+                    playerList[x + 1] = temp

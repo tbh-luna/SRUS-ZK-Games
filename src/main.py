@@ -1,12 +1,11 @@
 from player_list import PlayerList
 from player import Player
 
-zoe = Player(1,'Zoe')
-luna = Player(2,'Luna')
-alice = Player(3,'Alice')
-prunsel = Player(4,'Prunsel')
-wayne = Player(5,'Wayne')
-
+zoe = Player("1", 'Zoe')
+luna = Player("2", 'Luna')
+alice = Player("3", 'Alice')
+prunsel = Player("4", 'Prunsel')
+wayne = Player("5", 'Wayne')
 
 my_list = PlayerList()
 
@@ -46,4 +45,3 @@ Player.bubble_sort(standardList)
 
 print(standardList[0].__str__())
 print(standardList[4].__str__())
-
