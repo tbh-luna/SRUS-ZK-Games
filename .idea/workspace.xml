@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="insertion started. added comparison functions to nodes so i dont have to make unnecesary variables.">
-      <change afterPath="$PROJECT_DIR$/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/advprg-por1-workflow.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SRUS-ZK-Games.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/player_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_bnode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_bnode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_bst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/player_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,9 +98,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games\src" />
+      <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games\tests" />
+    </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests in test_player.py">
-    <configuration name="Python tests for test_player.TestPlayer.test_double_up_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_player.TestPlayer" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,11 +116,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_double_up_sort&quot;" />
+      <option name="_new_target" value="&quot;tests.test_player.TestPlayer&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_player.TestPlayer.test_ordered_list_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_player.TestPlayer.test_double_up_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,11 +132,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_ordered_list_sort&quot;" />
+      <option name="_new_target" value="&quot;tests.test_player.TestPlayer.test_double_up_sort&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_player.TestPlayer.test_password_check" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_player.TestPlayer.test_ordered_list_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +148,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_password_check&quot;" />
+      <option name="_new_target" value="&quot;tests.test_player.TestPlayer.test_ordered_list_sort&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_player.TestPlayer.test_password_check_incorrect" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_player.TestPlayer.test_password_check_incorrect" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,7 +164,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_player.TestPlayer.test_password_check_incorrect&quot;" />
+      <option name="_new_target" value="&quot;tests.test_player.TestPlayer.test_password_check_incorrect&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,17 +180,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_player.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_player.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_player.py" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_double_up_sort" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_ordered_list_sort" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_password_check_incorrect" />
-        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_password_check" />
+        <item itemvalue="Python tests.Python tests for tests.test_player.TestPlayer.test_double_up_sort" />
+        <item itemvalue="Python tests.Python tests for tests.test_player.TestPlayer.test_ordered_list_sort" />
+        <item itemvalue="Python tests.Python tests for tests.test_player.TestPlayer.test_password_check_incorrect" />
+        <item itemvalue="Python tests.Python tests for tests.test_player.TestPlayer" />
       </list>
     </recent_temporary>
   </component>

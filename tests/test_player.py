@@ -1,7 +1,7 @@
 import unittest
 import argon2
-from app.player import Player
-from app.player_list import PlayerList
+from src.player import Player
+from src.player_list import PlayerList
 
 class TestPlayer(unittest.TestCase):
 
