@@ -87,5 +87,6 @@ class TestPlayer(unittest.TestCase):
         Player.bubble_sort(self.doubleUpList)
         self.assertEqual(self.orderedDoubleUpList, self.doubleUpList)
 
+
 if __name__ == '__main__':
     unittest.main()
