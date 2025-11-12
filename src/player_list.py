@@ -113,17 +113,19 @@ class PlayerList:
         if not self.head_is_not_empty():
             return
 
-        if self.tail_is_not_empty():
-            if self.__listTail.previous == self.__listHead:
-                self.__listTail.previous = None
-            elif self.__listTail == self.__listHead:
-                self.__listTail = None
-
         else:
             if self.__listHead.next is None:
+
+                if self.tail_is_not_empty():
+                    if self.__listTail.previous == self.__listHead:
+                        self.__listTail.previous = None
+                    if self.__listTail == self.__listHead:
+                        self.__listTail = None
+
                 workingNode = self.__listHead
                 self.__listHead = None
                 del workingNode
+
                 return
 
             workingNode = self.__listHead
