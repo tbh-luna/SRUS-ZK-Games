@@ -55,5 +55,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.player_list.tail.key, self.player2.uid)
         self.player_list.display(True)
 
+
 if __name__ == '__main__':
     unittest.main()

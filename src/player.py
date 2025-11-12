@@ -32,11 +32,23 @@ class Player:
         saves object hash
 
         Args:
-            password: The password to be hashed."""
+            password: The password to be hashed.
+        """
 
         self.__hash = PasswordHasher().hash(password)
 
     def check_password(self, password : str):
+
+        """Checks whether password matches hash.
+
+        Args:
+            password: The password to be checked.
+
+        Raises:
+            argon2.exceptions.VerifyMismatchError:
+            if password does not match.
+        """
+
         PasswordHasher().verify(self.__hash, password)
 
     def __str__(self):
