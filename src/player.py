@@ -27,6 +27,13 @@ class Player:
         self.__score = value
 
     def add_password(self, password : str):
+
+        """Hashes the password using Argon2.
+        saves object hash
+
+        Args:
+            password: The password to be hashed."""
+
         self.__hash = PasswordHasher().hash(password)
 
     def check_password(self, password : str):

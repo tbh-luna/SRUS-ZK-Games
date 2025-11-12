@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="chore : running tests through python -m unittest discover -s tests fixed">
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="chore : flake">
+      <change afterPath="$PROJECT_DIR$/tests/test_player_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -343,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761814061277</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="chore : flake">
+      <option name="closed" value="true" />
+      <created>1761814121254</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1761814121254</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +383,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="player.py made" />
     <MESSAGE value="idk man" />
     <MESSAGE value="added player node and changed player py because im awesome" />
     <MESSAGE value="Added functionality to player_list.py, adding things to head, checking for tail while adding to head. no adding to tail." />
@@ -396,7 +407,8 @@
     <MESSAGE value="chore : last one." />
     <MESSAGE value="chore : last one?" />
     <MESSAGE value="chore : running tests through python -m unittest discover -s tests fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore : running tests through python -m unittest discover -s tests fixed" />
+    <MESSAGE value="chore : flake" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore : flake" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />

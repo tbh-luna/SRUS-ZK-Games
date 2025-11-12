@@ -32,42 +32,6 @@ class TestPlayer(unittest.TestCase):
         self.assertEqual(self.player.uid, "1")
         self.assertEqual(self.player.name, "Zoe")
 
-    def test_pop_head(self):
-
-        self.player_list.insert_at_head(self.player)
-        self.assertEqual(self.player_list.head.key, self.player.uid)
-        self.player_list.pop_at_head()
-        self.assertEqual(self.player_list.head, None)
-        self.player_list.insert_at_head(self.player)
-
-        self.player_list.insert_at_head(self.player2)
-        self.assertEqual(self.player_list.head.key, self.player2.uid)
-        self.player_list.pop_at_head()
-        self.assertEqual(self.player_list.head.key, self.player.uid)
-
-    def test_pop_tail(self):
-
-        self.player_list.insert_at_tail(self.player)
-        self.assertEqual(self.player_list.tail.key, self.player.uid)
-        self.player_list.pop_at_tail()
-        self.assertEqual(self.player_list.tail, None)
-        self.player_list.insert_at_tail(self.player)
-
-        self.player_list.insert_at_tail(self.player2)
-        self.assertEqual(self.player_list.tail.key, self.player2.uid)
-        self.player_list.pop_at_tail()
-        self.assertEqual(self.player_list.tail.key, self.player.uid)
-
-    def test_pop_by_id(self):
-        self.player_list.insert_at_head(self.player)
-        self.player_list.insert_at_head(self.player2)
-        self.player_list.insert_at_head(self.player3)
-        self.assertEqual(self.player_list.head.key, self.player3.uid)
-        self.player_list.pop_using_id("1")
-        self.assertEqual(self.player_list.head.key, self.player3.uid)
-        self.assertEqual(self.player_list.tail.key, self.player2.uid)
-        self.player_list.display(True)
-
     def test_password_check_correct(self):
         self.player.add_password("MicCheck1")
         self.player.check_password("MicCheck1")
@@ -86,7 +50,6 @@ class TestPlayer(unittest.TestCase):
     def test_double_up_sort(self):
         Player.bubble_sort(self.doubleUpList)
         self.assertEqual(self.orderedDoubleUpList, self.doubleUpList)
-
 
 if __name__ == '__main__':
     unittest.main()

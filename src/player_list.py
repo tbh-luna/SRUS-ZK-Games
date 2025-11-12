@@ -16,18 +16,38 @@ class PlayerList:
         return self.__listTail
 
     def head_is_not_empty(self):
+
+        """Checks if head is not empty.
+        In hindsight should have checked
+        whether head IS empty.
+
+        Returns: Boolean
+        """
+
         if self.__listHead is None:
             return False
         else:
             return True
 
     def tail_is_not_empty(self):
+
+        """Checks if tail is not empty.
+
+        Returns: Boolean
+        """
+
         if self.__listTail is None:
             return False
         else:
             return True
 
     def insert_at_head(self, player):
+
+        """Inserts a node at the head
+
+        Args:
+        Player: The node being inserted
+        """
 
         # Makes new node from player.
         newNode = PlayerNode(player)
@@ -37,6 +57,8 @@ class PlayerList:
         if not self.head_is_not_empty():
             self.__listHead = newNode
             self.__listHead.previous = None
+            if not self.tail_is_not_empty():
+                self.__listHead.next = None
 
         else:
             self.__listHead = newNode
@@ -52,6 +74,12 @@ class PlayerList:
         return
 
     def insert_at_tail(self, player):
+
+        """Inserts a node at tail
+
+        Args:
+        Player: The node being inserted
+        """
 
         newNode = PlayerNode(player)
         oldTail = self.__listTail
@@ -78,8 +106,18 @@ class PlayerList:
 
     def pop_at_head(self):
 
+        """Pops node at head
+        replaces head as necessary.
+        """
+
         if not self.head_is_not_empty():
             return
+
+        if self.tail_is_not_empty():
+            if self.__listTail.previous == self.__listHead:
+                self.__listTail.previous = None
+            elif self.__listTail == self.__listHead:
+                self.__listTail = None
 
         else:
             if self.__listHead.next is None:
@@ -95,6 +133,10 @@ class PlayerList:
             del workingNode
 
     def pop_at_tail(self):
+
+        """Pops node at tail
+        replaces tail as necessary.
+        """
 
         if not self.tail_is_not_empty():
             return
@@ -113,6 +155,14 @@ class PlayerList:
             del workingNode
 
     def pop_using_id(self, xid : str):
+
+        """Pops a node from the list
+        iterating from head
+        using specified ID
+
+        Args:
+            xid: The node ID
+        """
 
         if self.head_is_not_empty():
             if self.__listHead.key == xid:
@@ -154,7 +204,18 @@ class PlayerList:
         else:
             print("List is empty.")
 
-    def display(self, fromhead):
+    def display(self, fromhead : bool):
+
+        """Displays the list
+        Starting from either the head,
+        or the tail, going
+        forwards or backwards
+        respectively.
+
+        Args:
+            fromhead: if false, goes from tail.
+            if true, goes from head.
+        """
 
         if fromhead:
             if self.head_is_not_empty():
