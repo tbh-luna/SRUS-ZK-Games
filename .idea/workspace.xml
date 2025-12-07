@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="flake : flake.">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="fix : assert not equal had an s">
+      <change afterPath="$PROJECT_DIR$/tests/test_player_bst.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_bst.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,6 +61,7 @@
     "Python tests.Python tests for test_player.TestPlayer.test_pop_head.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.test_pop_tail.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.test_properties.executor": "Run",
+    "Python tests.Python tests for test_player_bst.TestPlayerBst.test_insert.executor": "Run",
     "Python tests.Python tests for test_player_list.MyTestCase.test_pop_head.executor": "Run",
     "Python tests.Python tests for test_player_list.MyTestCase.test_pop_tail.executor": "Run",
     "Python tests.Python tests in player_test.py.executor": "Run",
@@ -91,7 +93,7 @@
       <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_player.TestPlayer.test_comparisons">
+  <component name="RunManager" selected="Python tests.Python tests for test_player_bst.TestPlayerBst.test_insert">
     <configuration name="Python tests for test_player.TestPlayer.test_comparisons" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -104,6 +106,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_player.TestPlayer.test_comparisons&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_player_bst.TestPlayerBst.test_insert" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SRUS-ZK-Games" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_player_bst.TestPlayerBst.test_insert&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -154,6 +171,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_player_bst.TestPlayerBst.test_insert" />
         <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_comparisons" />
         <item itemvalue="Python tests.Python tests for test_player_list.MyTestCase.test_pop_head" />
         <item itemvalue="Python tests.Python tests for test_player_list.MyTestCase.test_pop_tail" />
@@ -451,7 +469,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765132475888</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fix : assert not equal had an s">
+      <option name="closed" value="true" />
+      <created>1765132550618</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1765132550618</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="anxious class work i really need to test this shit soon" />
     <MESSAGE value="Tested functionality basically did everything im basically awesome is how it works." />
     <MESSAGE value="added properties mostly" />
     <MESSAGE value="commends" />
@@ -504,7 +529,8 @@
     <MESSAGE value="fix : fixed changes in code which caused a unit test to fail while it should've succeeded." />
     <MESSAGE value="chore : docstrings" />
     <MESSAGE value="flake : flake." />
-    <option name="LAST_COMMIT_MESSAGE" value="flake : flake." />
+    <MESSAGE value="fix : assert not equal had an s" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : assert not equal had an s" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
