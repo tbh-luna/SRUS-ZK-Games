@@ -51,6 +51,11 @@ class TestPlayer(unittest.TestCase):
         Player.bubble_sort(self.doubleUpList)
         self.assertEqual(self.orderedDoubleUpList, self.doubleUpList)
 
+    def test_comparisons(self):
+        self.assertGreater(self.player2, self.player)
+        self.assertLess(self.player, self.player3)
+        self.assertNotEquals(self.player2, self.player4)
+        self.assertEqual(self.player3, self.player3)
 
 if __name__ == '__main__':
     unittest.main()

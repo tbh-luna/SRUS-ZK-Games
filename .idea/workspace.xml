@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="chore : flake&#10;doc : added a few more docstrings.">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="fix : fixed changes in code which caused a unit test to fail while it should've succeeded.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,7 @@
     "Python tests.Python tests for test.player_test.TestPlayer.executor": "Run",
     "Python tests.Python tests for test.player_test.TestPlayer.test_properties.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.executor": "Run",
+    "Python tests.Python tests for test_player.TestPlayer.test_comparisons.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.test_double_up_sort.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.test_ids.executor": "Run",
     "Python tests.Python tests for test_player.TestPlayer.test_ordered_list_sort.executor": "Run",
@@ -90,7 +93,22 @@
       <recent name="C:\Users\Luna\PycharmProjects\SRUS-ZK-Games\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_player_list.MyTestCase.test_pop_head">
+  <component name="RunManager" selected="Python tests.Python tests for test_player.TestPlayer.test_comparisons">
+    <configuration name="Python tests for test_player.TestPlayer.test_comparisons" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SRUS-ZK-Games" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_player.TestPlayer.test_comparisons&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_player_list.MyTestCase.test_pop_head" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SRUS-ZK-Games" />
       <option name="ENV_FILES" value="" />
@@ -138,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_player.TestPlayer.test_comparisons" />
         <item itemvalue="Python tests.Python tests for test_player_list.MyTestCase.test_pop_head" />
         <item itemvalue="Python tests.Python tests for test_player_list.MyTestCase.test_pop_tail" />
         <item itemvalue="Python tests.Python tests in test_player.py" />
@@ -402,7 +421,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762947618558</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix : fixed changes in code which caused a unit test to fail while it should've succeeded.">
+      <option name="closed" value="true" />
+      <created>1762947976099</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1762947976099</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +457,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added functionality to player_list.py, adding things to head, checking for tail while adding to head. no adding to tail." />
     <MESSAGE value="adding to tail is now something that can be done" />
     <MESSAGE value="popping at head and tail now possible." />
     <MESSAGE value="anxious class work i really need to test this shit soon" />
@@ -455,7 +481,8 @@
     <MESSAGE value="chore : flake" />
     <MESSAGE value="fix : acted on feedback. logic in test_player should be more stable.&#10;test : split tests. added test_player_list.&#10;docs : added docstrings to most functions." />
     <MESSAGE value="chore : flake&#10;doc : added a few more docstrings." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore : flake&#10;doc : added a few more docstrings." />
+    <MESSAGE value="fix : fixed changes in code which caused a unit test to fail while it should've succeeded." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : fixed changes in code which caused a unit test to fail while it should've succeeded." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />

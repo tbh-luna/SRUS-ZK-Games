@@ -17,7 +17,8 @@ class PlayerList:
 
     def head_is_not_empty(self):
 
-        """Checks if head is not empty.
+        """
+        Checks if head is not empty.
         In hindsight should have checked
         whether head IS empty.
 
@@ -31,7 +32,8 @@ class PlayerList:
 
     def tail_is_not_empty(self):
 
-        """Checks if tail is not empty.
+        """
+        Checks if tail is not empty.
 
         Returns: Boolean
         """
@@ -43,7 +45,8 @@ class PlayerList:
 
     def insert_at_head(self, player):
 
-        """Inserts a node at the head
+        """
+        Inserts a node at the head
 
         Args:
         Player: The node being inserted
@@ -75,7 +78,8 @@ class PlayerList:
 
     def insert_at_tail(self, player):
 
-        """Inserts a node at tail
+        """
+        Inserts a node at tail
 
         Args:
         Player: The node being inserted
@@ -106,7 +110,8 @@ class PlayerList:
 
     def pop_at_head(self):
 
-        """Pops node at head
+        """
+        Pops node at head
         replaces head as necessary.
         """
 
@@ -136,7 +141,8 @@ class PlayerList:
 
     def pop_at_tail(self):
 
-        """Pops node at tail
+        """
+        Pops node at tail
         replaces tail as necessary.
         """
 
@@ -158,7 +164,8 @@ class PlayerList:
 
     def pop_using_id(self, xid : str):
 
-        """Pops a node from the list
+        """
+        Pops a node from the list
         iterating from head
         using specified ID
 
@@ -208,7 +215,8 @@ class PlayerList:
 
     def display(self, fromhead : bool):
 
-        """Displays the list
+        """
+        Displays the list
         Starting from either the head,
         or the tail, going
         forwards or backwards
