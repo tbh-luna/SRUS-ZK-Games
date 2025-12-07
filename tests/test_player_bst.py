@@ -19,10 +19,14 @@ class TestPlayerBst(unittest.TestCase):
         self.player_tree.insert(self.player3, self.player_tree.treeRoot)
         self.player_tree.insert(self.player5, self.player_tree.treeRoot)
 
-        self.assertEqual(self.player_tree.treeRoot.internalPlayer.name, self.player.name)
-        self.assertEqual(self.player_tree.treeRoot.leftNode.internalPlayer.name, self.player2.name)
-        self.assertEqual(self.player_tree.treeRoot.leftNode.leftNode.internalPlayer.name, self.player5.name)
-        self.assertEqual(self.player_tree.treeRoot.rightNode.internalPlayer.name, self.player3.name)
+        self.assertEqual(self.player_tree.treeRoot.internalPlayer.name,
+                         self.player.name)
+        self.assertEqual(self.player_tree.treeRoot.leftNode.internalPlayer.name,
+                         self.player2.name)
+        self.assertEqual(self.player_tree.treeRoot.leftNode.leftNode.internalPlayer.name,
+                         self.player5.name)
+        self.assertEqual(self.player_tree.treeRoot.rightNode.internalPlayer.name,
+                         self.player3.name)
 
 
 if __name__ == '__main__':
