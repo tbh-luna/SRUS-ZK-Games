@@ -57,5 +57,6 @@ class TestPlayer(unittest.TestCase):
         self.assertNotEquals(self.player2, self.player4)
         self.assertEqual(self.player3, self.player3)
 
+
 if __name__ == '__main__':
     unittest.main()
