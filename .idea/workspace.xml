@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="chore : docstrings">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="flake : flake.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player.py" afterDir="false" />
     </list>
@@ -443,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765132417495</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="flake : flake.">
+      <option name="closed" value="true" />
+      <created>1765132475888</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1765132475888</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="popping at head and tail now possible." />
     <MESSAGE value="anxious class work i really need to test this shit soon" />
     <MESSAGE value="Tested functionality basically did everything im basically awesome is how it works." />
     <MESSAGE value="added properties mostly" />
@@ -496,7 +503,8 @@
     <MESSAGE value="chore : flake&#10;doc : added a few more docstrings." />
     <MESSAGE value="fix : fixed changes in code which caused a unit test to fail while it should've succeeded." />
     <MESSAGE value="chore : docstrings" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore : docstrings" />
+    <MESSAGE value="flake : flake." />
+    <option name="LAST_COMMIT_MESSAGE" value="flake : flake." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />

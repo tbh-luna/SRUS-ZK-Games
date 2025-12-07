@@ -54,7 +54,7 @@ class TestPlayer(unittest.TestCase):
     def test_comparisons(self):
         self.assertGreater(self.player2, self.player)
         self.assertLess(self.player, self.player3)
-        self.assertNotEquals(self.player2, self.player4)
+        self.assertNotEqual(self.player2, self.player4)
         self.assertEqual(self.player3, self.player3)
 
 
