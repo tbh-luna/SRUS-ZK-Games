@@ -1,6 +1,6 @@
 from __future__ import annotations
-from player import Player
-from player_bnode import PlayerBNode
+from src.player import Player
+from src.player_bnode import PlayerBNode
 
 
 class PlayerBST:

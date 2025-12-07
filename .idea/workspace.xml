@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="flake : please">
+    <list default="true" id="2ee1ada7-7551-4f8f-a7f4-d2138db0a951" name="Changes" comment="flake : ok fixed i think.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_bnode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_bnode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player_bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_player_bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_player_bst.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765135824547</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="flake : ok fixed i think.">
+      <option name="closed" value="true" />
+      <created>1765135890914</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1765135890914</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="yuppers" />
     <MESSAGE value="did password hashing and unit tests :3" />
     <MESSAGE value="Did setters and getters properly using decorators. Some type hinting added too." />
     <MESSAGE value="added some more type hinting" />
@@ -586,7 +593,8 @@
     <MESSAGE value="major : finally did proper insertion into bst as well as test cases for insertion of different length names." />
     <MESSAGE value="flake : flake" />
     <MESSAGE value="flake : please" />
-    <option name="LAST_COMMIT_MESSAGE" value="flake : please" />
+    <MESSAGE value="flake : ok fixed i think." />
+    <option name="LAST_COMMIT_MESSAGE" value="flake : ok fixed i think." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRUS_ZK_Games$player_list.coverage" NAME="player_list Coverage Results" MODIFIED="1756707433934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
